@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+
+	<servlet>
+		<servlet-name>HelloServlet</servlet-name>
+		<servlet-class>servlet.HelloServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloServlet</servlet-name>
+		<url-pattern>/hello</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>PromptServlet</servlet-name>
+		<servlet-class>servlet.PromptServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PromptServlet</servlet-name>
+		<url-pattern>/prompt</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CityServlet</servlet-name>
+		<servlet-class>servlet.CityServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CityServlet</servlet-name>
+		<url-pattern>/city</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CityServlet1</servlet-name>
+		<servlet-class>servlet.CityServlet1</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CityServlet1</servlet-name>
+		<url-pattern>/city1</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CityServlet2</servlet-name>
+		<servlet-class>servlet.CityServlet2</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CityServlet2</servlet-name>
+		<url-pattern>/city2</url-pattern>
+	</servlet-mapping>
+
+<servlet>
+		<servlet-name>CityServlet3</servlet-name>
+		<servlet-class>servlet.CityServlet3</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CityServlet3</servlet-name>
+		<url-pattern>/city3</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
